@@ -5,11 +5,23 @@
  */
 
 // @lc code=start
-class Solution {
+#include <map>
+class Solution
+{
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        
+    vector<int> twoSum(vector<int> &nums, int target)
+    {
+        map<int,int> m_map;
+        for (int i = 0; i < nums.size(); i++)
+        {
+            int complement = target - nums[i];
+            if (m_map.find(complement) != m_map.end())
+            {
+                return {m_map[complement], i};
+            }
+            m_map[nums[i]]= i;
+        }
+        return {};
     }
 };
 // @lc code=end
-
