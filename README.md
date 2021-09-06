@@ -1,4 +1,1 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 000d227e7129a835d7291f8186e2a82c0d4ba7af
+taylor wanna be better
