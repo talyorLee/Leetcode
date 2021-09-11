@@ -4,8 +4,6 @@
  * [136] 只出现一次的数字
  */
 
-import java.util.Arrays;
-
 // @lc code=start
 class Solution {
     public int singleNumber(int[] nums) {
