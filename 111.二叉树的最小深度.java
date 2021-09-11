@@ -17,10 +17,8 @@ class Solution {
             return 0;
         }
         // 这一步要特别注意，是一个很容易被忽略的情况
-        if (root.left == null || root.right == null) {
-            return Math.max(minDepth(root.left), minDepth(root.right)) + 1;
-        }
-        return Math.min(minDepth(root.left), minDepth(root.right)) + 1;
+        return (root.left == null || root.right == null) ? Math.max(minDepth(root.left), minDepth(root.right)) + 1
+                : Math.min(minDepth(root.left), minDepth(root.right)) + 1;
 
     }
 
