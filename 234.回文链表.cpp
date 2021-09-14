@@ -25,7 +25,7 @@ public:
             ListNode *tmp = slowp->next;
             slowp->next = revp;
             revp = slowp;
-            slowp = tmp;
+            slowp = tmp; 
         }
         if (fastp)
             slowp = slowp->next;
