@@ -14,7 +14,7 @@ class Solution {
         // for example:
         // 左子树的可能*右子树的可能
         // dp[2]=dp[0]*dp[1] + dp[1]*dp[0]
-        // dp[3]=dp[2]*dp[1] + dp[1]*dp[2]
+        // dp[3]=dp[0]*dp[2] + dp[1]*dp[1]+dp[2]*dp[0]
         for (int i = 2; i <= n; i++) {
             for (int j = 0; j < i; j++) {
 
