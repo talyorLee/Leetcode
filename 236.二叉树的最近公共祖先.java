@@ -10,6 +10,14 @@
  * left; TreeNode right; TreeNode(int x) { val = x; } }
  */
 class Solution {
+    // solutions for binary tree
+    // first: find the p or q in left tree and right tree
+    // second: if the left tree and the right tree exist p or q,then it means one in
+    // left , one in right tree
+    // so the root should be the ancestor of p and q
+    // final: if the left tree or the right tree is null,
+    // it means p and q are exist in one side , so first returned node is the
+    // ancestor of p and q
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null || root == p || root == q) {
             return root;
